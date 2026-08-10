@@ -35,9 +35,9 @@ export function Astronaut(props) {
       <group name="Sketchfab_Scene">
         <group
           name="Sketchfab_model"
-          rotation={[-Math.PI / 2, -0.2, 2.2]}
+          rotation={[0, 0, 0]}
           scale={props.scale || 0.3}
-          position={props.position || [1.3, -1, 0]}
+          position={props.position || [1.5, 0, 0]}
         >
           <group name="Root">
             <group name="metarig">

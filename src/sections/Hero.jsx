@@ -1,17 +1,17 @@
-import { Float } from "@react-three/drei";
-import { Astronaut } from "../components/Astronaut";
-import HeroText from "../components/Herotext";
-import ParallexBackgrounds from "../components/ParallexBackgrounds";
 import { Canvas, useFrame } from "@react-three/fiber";
+import HeroText from "../components/HeroText";
+import ParallexBackgrounds from "../components/ParallexBackgrounds";
+import { Astronaut } from "../components/Astronaut";
+import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
 import Loader from "../components/Loader";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 900 });
+  const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
+    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
       <HeroText />
       <ParallexBackgrounds />
       <figure
