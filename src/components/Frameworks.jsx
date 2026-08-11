@@ -2,13 +2,28 @@ import { OrbitingCircles } from "./OrbittingCircles";
 
 export function Frameworks() {
   const skills = [
-    "AWS",
+    "AirflowLogo",
+    "aws-icon",
     "azure",
-    "JAX_logo",
+    "claude-code",
+    "cplusplus",
+    "datascience",
+    "Fastapi",
+    "gcp",
+    "gemma-color",
+    "git",
+    "github",
+    "google-gemini",
+    "google-tensorflow-icon",
+    "Hugging-Face",
+    "javascript",
+    "Langchain",
+    "Matplotlib",
+    "Postgresql",
+    "Python",
+    "pytorch-icon",
     "react",
-    "FastAPI_logo",
-    "Pytorch",
-    "Tensorflow_logo",
+    "visualstudiocode",
   ];
   return (
     <div className="relative flex h-60 w-full flex-col items-center justify-center">

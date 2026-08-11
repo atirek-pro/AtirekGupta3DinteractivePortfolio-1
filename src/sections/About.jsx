@@ -68,12 +68,12 @@ const About = () => {
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="../assets/logos/TensorFlow_logo.svg"
+              image="../assets/logos/google-tensorflow-icon.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="../assets/logos/PyTorch_logo_icon.svg"
+              image="../assets/logos/pytorch-icon.svg"
               containerRef={grid2Container}
             />
             <Card

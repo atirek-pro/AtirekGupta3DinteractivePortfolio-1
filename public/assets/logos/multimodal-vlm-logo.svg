@@ -1,0 +1,67 @@
+<svg width="480" height="480" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Multi-modal VLM logo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="55%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="480" height="480" rx="96" fill="url(#bgGrad)"/>
+
+  <!-- Outer rounded frame, subtle -->
+  <rect x="16" y="16" width="448" height="448" rx="84" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Icon group: an "eye" formed by two intersecting rounded shapes,
+       representing Vision, with a small chat/text glyph inside representing Language -->
+  <g transform="translate(240,196)">
+    <!-- Outer eye / aperture shape -->
+    <path d="M -140 0
+             C -90 -78, -30 -108, 0 -108
+             C 30 -108, 90 -78, 140 0
+             C 90 78, 30 108, 0 108
+             C -30 108, -90 78, -140 0 Z"
+          fill="none" stroke="url(#eyeGrad)" stroke-width="14" stroke-linejoin="round" filter="url(#softGlow)"/>
+
+    <!-- Iris / lens: represents the "modal" core -->
+    <circle cx="0" cy="0" r="54" fill="#0F172A" stroke="url(#eyeGrad)" stroke-width="10"/>
+
+    <!-- Language glyph inside the lens: stylized text lines / speech pulse -->
+    <g stroke="url(#eyeGrad)" stroke-width="8" stroke-linecap="round">
+      <line x1="-26" y1="-14" x2="26" y2="-14"/>
+      <line x1="-26" y1="4" x2="14" y2="4"/>
+      <line x1="-26" y1="22" x2="4" y2="22"/>
+    </g>
+
+    <!-- Small pixel/aperture dots suggesting image sensor, top and bottom -->
+    <circle cx="0" cy="-108" r="9" fill="url(#eyeGrad)"/>
+    <circle cx="0" cy="108" r="9" fill="url(#eyeGrad)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="240" y="372" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="700" font-size="44" letter-spacing="2" fill="#F8FAFC">
+    Multi<tspan fill="url(#textGrad)">Modal</tspan>
+  </text>
+  <text x="240" y="410" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="600" font-size="22" letter-spacing="8" fill="#94A3B8">
+    V L M
+  </text>
+</svg>
