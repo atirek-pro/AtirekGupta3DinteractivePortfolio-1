@@ -2,8 +2,9 @@ import { twMerge } from "tailwind-merge";
 import { Marquee } from "../components/Marquee";
 import { reviews } from "../constants";
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+// Added Math.ceil to safely handle an odd number of reviews (5 / 2)
+const firstRow = reviews.slice(0, Math.ceil(reviews.length / 2));
+const secondRow = reviews.slice(Math.ceil(reviews.length / 2));
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
@@ -37,16 +38,20 @@ export default function Testimonial() {
     <div className="items-start mt-25 md:mt-35 c-space">
       <h2 className="text-heading">Hear From My Clients</h2>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden mt-12">
+        {/* Row 1 */}
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.name} {...review} />
           ))}
         </Marquee>
+
+        {/* Row 2 */}
         <Marquee reverse pauseOnHover className="[--duration:20s]">
           {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.name} {...review} />
           ))}
         </Marquee>
+
         <div className="from-primary pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r"></div>
         <div className="from-primary pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l"></div>
       </div>

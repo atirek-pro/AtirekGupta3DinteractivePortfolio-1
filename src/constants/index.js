@@ -237,11 +237,4 @@ export const reviews = [
     body: "Atirek understood the problem quickly and turned it into a reliable AI solution with a strong focus on both performance and real-world usability.",
     img: "https://robohash.org/saubrah",
   },
-  {
-    name: "Amit",
-    username: "Happy People AI",
-    body: "Atirek delivered a practical AI solution with a clear understanding of our requirements, focusing on reliability, usability, and real business impact.",
-    img: "https://robohash.org/amit",
-  },
-  ,
 ];
