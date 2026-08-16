@@ -20,7 +20,8 @@ const Projects = () => {
       className="relative c-space section-spacing"
     >
       <h2 className="text-heading">My Selective Projects</h2>
-      <div className="bg-linear-to-r from-transparent via-netural-700 to-transparent mt-12 h-px w-full ">
+      <div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
+      <div className="w-full">
         {myProjects.map((project) => (
           <Project key={project.id} {...project} setPreview={setPreview} />
         ))}
