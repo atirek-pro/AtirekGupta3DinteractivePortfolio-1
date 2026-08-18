@@ -7,7 +7,7 @@ import { Frameworks } from "../components/Frameworks";
 const About = () => {
   const grid2Container = useRef();
   return (
-    <section className="c-space section-spacing">
+    <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-72 mt-12">
         {/* Grid 1 */}
@@ -19,7 +19,7 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Atirek Gupta</p>
             <p className="subtext">
-              Over the last 4 years, I developed my AI, Machine Lerning, Deep
+              Over the last 4 years, I developed my AI, Machine Learning, Deep
               Learning, Generative AI, Agentic AI and cloud skills to deliver
               dynamic and scalable AI solutions having an enterprise level
               effect.
